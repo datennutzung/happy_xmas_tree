@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Calculate Version Number</title>
+        <title>Happy Christmas Tree</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
@@ -10,17 +10,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro&display=swap">
     </head>
     <body>
-        <div>
-            <span id="tree">*<br>***<br>*****<br>*******<br>***<br>*****<br>*******<br>***<br>***<br>***<br></span>
+        <div id="treepot">
+            <span id="tree">*<br>**<br>***<br>****<br>*****<br>******<br>*******<br>********<br>| |</span>
         </div>
-        <form>
-            <input type="number" id="width" class="nbr" placeholder="Width of the Tree" required>
-            <input type="number" id="height" class="nbr" placeholder="Height of the Tree" required>
-            <input type="number" id="stem_height" class="nbr" placeholder="Stem Height" required>
-            <input type="number" id="stem_width" class="nbr" placeholder="Stem Width" required>
-            <button type="button" id="generate_button" class="btn" onclick="generate()">Generate</button>
-        </form>
-
-        <script type="text/javascript" src="./script.js"></script>
+        <div id="control">
+            <input type="range" id="treesize_range" value="8" min="8" max="22" oninput="generate(this.value);">
+            <label for="treesize_range" id="height_label">8</label>
+        </div>
+        <script type="text/javascript" src="./script.js">generate();</script>
     </body>
 </html>

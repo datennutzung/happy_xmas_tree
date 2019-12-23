@@ -1,7 +1,18 @@
-body {
+html {
 	background-color: #222222;
 	color: white;
 	font-family: 'Roboto Light', sans-serif;
+	font-size: smaller;
+}
+
+#control {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+label {
+	margin-left: 1rem;
 }
 
 #tree {
@@ -9,7 +20,7 @@ body {
 	color: white;
 	text-align: center;
 	font-size: 5rem;
-	line-height: 2.4rem;
+	line-height: 3rem;
 	letter-spacing: -0.8rem;
 
 	position: fixed;
